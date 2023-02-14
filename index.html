@@ -5,12 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classic Editor | by Theophil Dio</title>
+    <!-- Font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/4196e4e2e9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    <h1>hello world!</h1>
+  <body class="bg-slate-800">
+    <header
+      class="lg:container lg:mx-auto py-8 bg-slate-700 mt-12 rounded-t-lg"
+    >
+      <h1 class="text-4xl capitalize text-center text-slate-400">
+        Classic editor by <span class="text-slate-300">Theophil Dio</span>
+      </h1>
+    </header>
+    <main class="lg:container lg:mx-auto bg-slate-700 p-5 rounded-b-lg">
+      <section
+        class="editor-panel w-11/12 mx-auto bg-slate-200 rounded-md drop-shadow-lg text-gray-600"
+      >
+        <div class="tools border-b drop-shadow-sm p-5 flex justify-between items-center">
+          <div class="w-1/3 text-decoration">
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-bold"></i
+            ></span>
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-italic"></i
+            ></span>
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-underline"></i
+            ></span>
+          </div>
+          <div class="w-1/3 tex-alignment flex justify-center items-center">
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-align-left"></i
+            ></span>
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-align-center"></i
+            ></span>
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-align-right"></i
+            ></span>
+            <span class="mr-2 text-xs cursor-pointer"
+              ><i class="fa-solid fa-align-justify"></i
+            ></span>
+          </div>
+          <div class="w-1/3 text-style flex items-center justify-end">
+            <span class="mr-2 cursor-pointer"
+              >aA</i
+            ></span>
+            <input class="w-10 mr-2" type="number" id="" value="12">
+            <input class="cursor-pointer" type="color" id="">
+          </div>
+        </div>
+        <textarea
+          class="w-full border-0 bg-slate-100 p-3 focus:outline-none resize-none"
+          name=""
+          id=""
+          rows="15"
+        ></textarea>
+      </section>
+    </main>
   </body>
 </html>
