@@ -19,28 +19,30 @@
     <header
       class="lg:container lg:mx-auto py-8 bg-slate-700 mt-12 rounded-t-lg"
     >
-      <h1 class="text-4xl capitalize text-center text-slate-400">
-        Classic editor by <span class="text-slate-300">Theophil Dio</span>
+      <h1 class="text-4xl capitalize text-center text-slate-300">
+        Classic editor
       </h1>
     </header>
-    <main class="lg:container lg:mx-auto bg-slate-700 p-5 rounded-b-lg">
+    <main class="lg:container lg:mx-auto bg-slate-700 p-5">
       <section
         class="editor-panel w-11/12 mx-auto bg-slate-200 rounded-md drop-shadow-lg text-gray-600"
       >
         <div class="tools border-b drop-shadow-sm p-5 flex justify-between items-center">
+            <!-- Text Decoration -->
           <div class="w-1/3 text-decoration">
-            <span class="mr-2 text-xs cursor-pointer"
+            <span id="text-bold" class="mr-2 text-xs cursor-pointer font-bold"
               ><i class="fa-solid fa-bold"></i
             ></span>
-            <span class="mr-2 text-xs cursor-pointer"
+            <span id="text-italic" class="mr-2 text-xs cursor-pointer italic"
               ><i class="fa-solid fa-italic"></i
             ></span>
-            <span class="mr-2 text-xs cursor-pointer"
+            <span id="text-underline" class="mr-2 text-xs cursor-pointer underline"
               ><i class="fa-solid fa-underline"></i
             ></span>
           </div>
+          <!-- Text Alignment -->
           <div class="w-1/3 tex-alignment flex justify-center items-center">
-            <span class="mr-2 text-xs cursor-pointer"
+            <span id="text-left" class="mr-2 text-xs cursor-pointer"
               ><i class="fa-solid fa-align-left"></i
             ></span>
             <span class="mr-2 text-xs cursor-pointer"
@@ -53,6 +55,7 @@
               ><i class="fa-solid fa-align-justify"></i
             ></span>
           </div>
+          <!-- Text Style -->
           <div class="w-1/3 text-style flex items-center justify-end">
             <span class="mr-2 cursor-pointer"
               >aA</i
@@ -64,10 +67,16 @@
         <textarea
           class="w-full border-0 bg-slate-100 p-3 focus:outline-none resize-none"
           name=""
-          id=""
+          id="text-area"
           rows="15"
         ></textarea>
       </section>
     </main>
+    <footer class="lg:container lg:mx-auto bg-slate-400 p-5 rounded-b-lg">
+        <p class="text-sm text-center">&copy; 2023 - All rights reserved by Theophil Dio</p>
+    </footer>
+    <!-- JS files -->
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
