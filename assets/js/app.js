@@ -7,6 +7,9 @@ const textLeft = getElement('text-left');
 const textCenter = getElement('text-center');
 const textRight = getElement('text-right');
 const textJustify = getElement('text-justify');
+const textUppercase = getElement('text-uppercase');
+const textSize = getElement('text-size');
+const textColor = getElement('text-color');
 
 // Make text bold
 toggleToChanges(textBold, 'font-bold');
@@ -28,3 +31,18 @@ textAlign(textRight, textArea, 'right');
 
 // Make text right align 
 textAlign(textJustify, textArea, 'justify');
+
+// Make text uppercase or lowercase
+toggleToChanges(textUppercase, 'uppercase');
+
+// Change text size 
+textSize.addEventListener('change', function() {
+    const textSizeValue = textSize.value;
+    textArea.style.fontSize = `${textSizeValue}px`;
+})
+
+// Change text color
+textColor.addEventListener('change', function() {
+    const setColor = textColor.value;
+    textArea.style.color = setColor;
+})
